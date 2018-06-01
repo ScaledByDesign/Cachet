@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1] 系统工作正常|[2,*] 所有系统工作正常',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1] 系统出现了问题|[2,*] 一些系统出现了问题',
         'major' => '[0,1] 系统出现重大故障|[2,*] 一些系统出现重大故障',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => '您当前已订阅所有更新。',
             'my_subscriptions' => '您当前已订阅下列更新',
+            'manage_at_link'   => '在 :link 管理你的订阅',
         ],
         'email' => [
             'subscribe'          => '订阅电子邮件更新。',
@@ -120,8 +121,8 @@ return [
     // Meta descriptions
     'meta' => [
         'description' => [
-            'incident'  => 'Details and updates about the :name incident that occurred on :date',
-            'schedule'  => 'Details about the scheduled maintenance period :name starting :startDate',
+            'incident'  => '有关于发生在 :date 的 :name 事件的细节与更新',
+            'schedule'  => '有关于计划维护时段 :name ，开始于 :startDate，的细节说明',
             'subscribe' => 'Subscribe to :app in order to receive updates of incidents and scheduled maintenance periods',
             'overview'  => '始终保持对 :app 服务状态的关注。',
         ],

@@ -33,7 +33,7 @@ return [
         'scheduled'    => 'Плановые работы',
         'scheduled_at' => ', запланированы :timestamp',
         'posted'       => 'Опубликовано :timestamp',
-        'posted_at'    => 'Posted at :timestamp',
+        'posted_at'    => 'Опубликовано в :timestamp',
         'status'       => [
             1 => 'Проводим анализ проблемы',
             2 => 'Причина определена',
@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1] Система работает исправно|[2,Inf] Все системы работают исправно',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1] В системе есть неполадки|[2,Inf] В некоторых системах есть неполадки',
         'major' => '[0,1] Система не работает|[2,Inf] Некоторые системы не работают',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'Вы подписаны на все изменения.',
             'my_subscriptions' => 'Вы подписаны на следующие изменения.',
+            'manage_at_link'   => 'Управляйте своими подписками в :link',
         ],
         'email' => [
             'subscribe'          => 'Подписка на рассылку об изменениях.',

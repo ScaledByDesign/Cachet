@@ -33,7 +33,7 @@ return [
         'scheduled'    => 'Manutenção Agendada',
         'scheduled_at' => ', agendada :timestamp',
         'posted'       => 'Publicado :timestamp',
-        'posted_at'    => 'Posted at :timestamp',
+        'posted_at'    => 'Publicado em :timestamp',
         'status'       => [
             1 => 'Investigando',
             2 => 'Identificado',
@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1] Sistema operacional|[2,Inf] Todos os sistemas estão operacionais',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1] O sistema encontra-se com alguns problemas|[2,Inf] Alguns sistemas estão com problemas',
         'major' => '[0,1] O serviço encontra-se com uma falha geral.|[2,Inf] Alguns sistemas encontram-se com falhas gerais',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'Actualmente está subscrito para todas as actualizações.',
             'my_subscriptions' => 'Actualmente está subscrito para as seguintes actualizações.',
+            'manage_at_link'   => 'Edite as suas subscrições aqui :link',
         ],
         'email' => [
             'subscribe'          => 'Subscrever actualizações via email.',

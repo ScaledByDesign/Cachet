@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1] Sistema en funcionament | [2, Inf] Tots els sistemes estan en funcionament',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1] Actualment el sistema està experimentant problemes| [2, Inf] Alguns sistemes estan experimentant problemes',
         'major' => '[0,1] El servei està experimentant una interrupció major| [2, Inf] Alguns sistemes estan experimentant una interrupció major',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'Actualment estau subscrits a totes les actualitzacions.',
             'my_subscriptions' => 'Actualment estau subscrits a les següents actualitzacions.',
+            'manage_at_link'   => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'Subscriviu-vos a les actualitzacions del correu electrònic.',

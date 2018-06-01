@@ -53,9 +53,9 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1]正常に稼動しています|[2,Inf]全システムが正常に稼動しています',
-        'bad'   => '[0,1]問題が発生しています|[2,Inf]一部システムにて問題が発生しています',
-        'major' => '[0, 1]システムで大きな問題が発生 |[2、*]いくつかのシステムの主要な問題が発生しています。',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
+        'bad'   => '一部のシステムに問題が発生しています',
+        'major' => 'システムに深刻な問題が発生しています',
     ],
 
     'api' => [
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'You\'re currently subscribed to all updates.',
             'my_subscriptions' => 'You\'re currently subscribed to the following updates.',
+            'manage_at_link'   => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'メールによるアップデート情報の購読',

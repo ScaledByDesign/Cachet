@@ -16,25 +16,26 @@ return [
 
     // Incidents
     'incidents' => [
-        'title'                    => 'Incidenten & planning',
+        'title'                    => 'Incidenten & Onderhoud',
         'incidents'                => 'Incidenten',
-        'logged'                   => '{0} Proficiat, er zijn geen incidenten.|Er heeft zich één incident voorgedaan.|Er zijn <strong>:count</strong> incidenten gerapporteerd.',
+        'logged'                   => '{0}There are no incidents, good work.|[1]You have logged one incident.|[2,*]You have reported <strong>:count</strong> incidents.',
         'incident-create-template' => 'Maak template',
         'incident-templates'       => 'Incident Sjablonen',
         'updates'                  => [
             'title'   => 'Incident updates voor :incident',
-            'count'   => '{0} Geen updates |[1] Een update |[2] Twee updates | [3, *] Verscheidene updates',
+            'count'   => '{0}Zero Updates|[1]One Update|[2]Two Updates|[3,*]Several Updates',
             'add'     => [
                 'title'   => 'Maak een nieuwe incident update',
-                'success' => 'Je nieuwe incident template is aangemaakt.',
-                'failure' => 'Er is iets misgegaan met de incident template.',
+                'success' => 'Je nieuwe incident update is aangemaakt.',
+                'failure' => 'Er is iets misgegaan met de incident update.',
             ],
             'edit' => [
                 'title'   => 'Incident update bewerken',
-                'success' => 'De incident template is bijgewerkt.',
-                'failure' => 'Er is een fout opgetreden bij het wijzigen van de incident template',
+                'success' => 'De incident update is bijgewerkt.',
+                'failure' => 'Er is een fout opgetreden bij het wijzigen van de incident update',
             ],
         ],
+        'reported_by'              => 'Gemeld door: gebruiker',
         'add'                      => [
             'title'   => 'Meld een incident',
             'success' => 'Incident toegevoegd.',
@@ -74,11 +75,11 @@ return [
     // Incident Maintenance
     'schedule' => [
         'schedule'     => 'Gepland onderhoud',
-        'logged'       => '{0} Er zijn geen schema\'s, goed werk.|Je hebt één schema aangemaakt.|Je hebt <strong>:count</strong> schema\'s aangegeven.',
+        'logged'       => '{0}There has been no Maintenance, good work.|[1]You have logged one schedule.|[2,*]You have reported <strong>:count</strong> schedules.',
         'scheduled_at' => 'Gepland op :timestamp',
         'add'          => [
             'title'   => 'Gepland onderhoud toevoegen',
-            'success' => 'Gepland onderhoud toegevoegd.',
+            'success' => 'Onderhoud toegevoegd.',
             'failure' => 'Er ging iets mis met het toevoegen van het geplande onderhoud, probeer het opnieuw.',
         ],
         'edit' => [

@@ -53,7 +53,7 @@ return [
 
     // Service Status
     'service' => [
-        'good'  => '[0,1]Sistem operasional|[2,*] Semua sistem operasional',
+        'good'  => '[0,1]System operational|[2,*]All systems are operational',
         'bad'   => '[0,1]Sistem ini sedang mengalami masalah|[2,*]Beberapa sistem mengalami masalah',
         'major' => '[0,1]Sistem mengalami masalah besar|[2,*]Beberapa sistem mengalami masalah besar',
     ],
@@ -81,6 +81,7 @@ return [
         'manage'      => [
             'no_subscriptions' => 'Anda saat ini terdaftar untuk semua update.',
             'my_subscriptions' => 'Anda saat ini berlangganan update berikut.',
+            'manage_at_link'   => 'Manage your subscriptions at :link',
         ],
         'email' => [
             'subscribe'          => 'Langganan update email.',
